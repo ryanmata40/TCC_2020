@@ -9,4 +9,6 @@ module.exports = app => {
             res.status(200).send("Sucesso!")
         });
 
+    app.post('/cep',  app.src.Controllers.cepValidate.consultaCep);
+    app.post('/cpf',  app.src.Controllers.cpfValidate.cpfvalidate);
 };
