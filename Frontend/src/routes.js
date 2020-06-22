@@ -1,15 +1,30 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+import FirstPage from './pages/firstPage';
 import Main from './pages/main';
 import Dashboard from './pages/dashboard';
 
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="FistPage" component={FirstPage} options={{   headerShown: false   } }/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+
+function TAB() {
   return (
     <NavigationContainer>
       <Tab.Navigator 
