@@ -1,8 +1,8 @@
 {
-  "name": "Frontend",
-  "displayName": "Frontend",
+  "name": "Faxina Plus",
+  "displayName": "Faxina Plus",
   "expo": {
-    "name": "Frontend_TCC",
+    "name": "Faxina Plus",
     "slug": "Frontend",
     "version": "1.0.0",
     "platforms": [
@@ -13,7 +13,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "description": "Frontend do TCC",
+    "description": "Aplicação para serviço domestico",
     "githubUrl": "https://github.com/ryanmata40/tcc_2020"
   }
 }

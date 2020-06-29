@@ -1,41 +1,49 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
     container: {
         flex: 1,
-        // justifyContent: 'center',
-        // alignItems: 'center',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+
     },
     top: {
+        flex: 1,
         backgroundColor: '#FA7500',
-        width: '361px',
-        height: '300px',
+        width: wp('100%'),
+        height: hp('50%'),
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        
     },
     medium: {
         backgroundColor: '#FFFFFF',
-        width: '361px',
-        height: '50px',
+        width: wp('100%'),
+        height: hp('10%'),
         justifyContent: 'center',
         alignItems: 'center',
     },
     bottom: {
+        flex: 1,
         backgroundColor:'rgba(0, 133, 255, 0.9)',
-        width: '361px',
-        height: '300px',
+        width: wp('100%'),
+        height: hp('45%'),
+        justifyContent: 'space-around',
+        alignItems: 'center',
+
     },
     Buttom: {
         position: 'absolute',
-        height: '58px',
-        width: '163px',
+        height: 60,
+        width: 165,
         borderRadius: 10,
         borderWidth: 2,
         borderColor: '#FFF',
-        boxSizing: 'border-box',
         backgroundColor: 'transparent',
+        marginTop: 150,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 212,
-        marginLeft: 92,
       },
       ButtomTitle: {
         fontWeight: 'bold',
@@ -48,11 +56,10 @@ export default StyleSheet.create({
         color: '#888888'
       },
       img: {
-        width: 166,
-        height: 148,
+        width: 165,
+        height: 150,
       },
-      posImg: {
-        paddingLeft: 97,
-        paddingTop: 32
+      posImgBottom: {
+        marginLeft: 50,
       }
 });

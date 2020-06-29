@@ -11,14 +11,14 @@ export default class main extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.top}> 
-                    <View style={styles.posImg}>
+                    <View >
                         <Image source={servidor} style={styles.img} />
                     </View>
                     <TouchableOpacity
                         style={styles.Buttom} 
-                        onPress={() => this.props.navigation.navigate('Dashboard')}
+                        onPress={() => 'oi'}
                     >
-                        <Text style={styles.ButtomTitle}>Servidor</Text>
+                        <Text style={styles.ButtomTitle}>Diarista</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -27,13 +27,13 @@ export default class main extends Component {
                 </View>
 
                 <View style={styles.bottom}>
-                    <View style={styles.posImg}>
+                    <View style={styles.posImgBottom}>
                         <Image source={contratante} style={styles.img} />
                     </View>
                     
                     <TouchableOpacity
                         style={styles.Buttom} 
-                        onPress={() => this.props.navigation.navigate('Main')}
+                        onPress={() => 'oi'}
                     >
                         <Text style={styles.ButtomTitle}>Contratante</Text>
                     </TouchableOpacity>
